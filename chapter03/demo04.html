@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>with语句</title>
+</head>
+<body>
+<script>
+    //严格模式下不允许使用with
+    //'use strict';
+    let qs = location.search;
+    let hostName = location.hostname;
+    let url = location.href;
+
+    with (location) {
+        console.log(qs === search,hostName === hostname,url === href);
+    }
+</script>
+</body>
+</html>

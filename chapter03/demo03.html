@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label语句</title>
+</head>
+<body>
+<script>
+    let num = 0;
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 10; j++) {
+            if (i === 5 && j === 5) {
+                break;
+            }
+            num++;
+        }
+    }
+    console.log(num);
+
+    let sum = 0;
+    output:for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 10; j++) {
+            if (i === 5 && j === 5) {
+                break output;
+            }
+            sum++;
+        }
+    }
+    console.log(sum);
+</script>
+</body>
+</html>

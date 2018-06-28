@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo06</title>
+</head>
+<body>
+<button title="不许点击">主控测试</button>
+<script>
+    //'use strict';
+    function sum(num1,num2,num3) {
+        if (arguments.length === 0) {
+            return;
+        } else if (arguments.length === 1) {
+            return arguments[0] + 10;
+        } else if (arguments.length === 2) {
+            return arguments[0] + arguments[1];
+        }
+    }
+
+    console.log(sum());
+    console.log(sum(85));
+    console.log(sum(20,53));
+
+    function f(obj) {
+        alert(obj.name);
+    }
+    f({name: 'hello'});
+</script>
+</body>
+</html>
